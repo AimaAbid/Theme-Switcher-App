@@ -1,0 +1,45 @@
+/* light header:7E60BF 
+light body: FFE1FF
+  light footer:E4B1F0*/
+
+  /* 
+  dark body:001F3F
+  dark header 3A6D8C
+  dark footer 6A9AB0 */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-light{
+
+    height: 100px;
+    background-color:#7E60BF  ;
+   
+  
+}
+
+.header-dark{
+
+    height: 100px;
+    background-color:#3A6D8C  ;
+   
+  
+}
+
+a{
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    padding: 40px;
+}
+
+.header-dark>a:first-child{
+    margin-left: 350px;
+}
+
+.header-light>a:first-child{
+    margin-left: 350px;
+}
+

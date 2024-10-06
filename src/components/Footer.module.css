@@ -1,0 +1,50 @@
+/* light header:7E60BF 
+light body: FFE1FF
+  light footer:E4B1F0*/
+
+  /* 
+  dark body:001F3F
+  dark header 3A6D8C
+  dark footer 6A9AB0 */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-light{
+
+    height: 100px;
+    background-color:#E4B1F0  ;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+  
+}
+
+.footer-dark{
+
+    height: 100px;
+    background-color:#6A9AB0  ;
+    /* text-align: center;   */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+  
+}
+
+a{
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    
+}
+
+.footer-dark,.footer-light{
+    text-align: center;
+}
+

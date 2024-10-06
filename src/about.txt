@@ -1,0 +1,1 @@
+This app uses useContext to switch themes(light mode and dark mode), also uses CSS modules, google fonts

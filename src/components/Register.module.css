@@ -1,0 +1,77 @@
+/* light header:7E60BF 
+light body: FFE1FF
+  light footer:E4B1F0*/
+
+  /* 
+  dark body:001F3F
+  dark header 3A6D8C
+  dark footer 6A9AB0 */
+  .make-block{
+    display:block ;
+  }
+
+.button-light{
+    
+    background-color: #E4B1F0;
+   
+     
+
+}
+
+.button-dark{
+    background-color: #6A9AB0;
+   
+    
+
+}
+
+.button-dark,.button-light{
+    padding: 10px;
+    border-radius: 15%;
+    border: none;
+}
+
+.background-dark{
+    background-color: #001F3F;
+
+}
+
+.background-light{
+    border-color: #FFE1FF;
+
+}
+.background-light,.background-dark{
+    height: 500px;
+}
+
+.input-style{
+    margin-top: 20px;
+    height: 50px;
+    width: 500px;
+}
+
+.text-dark{
+  padding-top: 20px;
+    color: white;
+   
+   
+}
+
+.text-light{
+    padding-top: 20px;
+    color: black;
+    
+}
+
+.center{
+    margin-left: 10%;
+   
+}
+
+
+
+
+
+
+
+
