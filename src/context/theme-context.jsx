@@ -4,14 +4,30 @@ const ThemeContext = createContext();
 function Provider({ children }) {
 	const [theme, setTheme] = useState("light");
 	function changeTheme(theme){
+		var newTheme;
 		if (theme === "light") {
-			setTheme("dark");
+		    newTheme="dark";
+			setTheme(newTheme);
+			localStorage.setItem("theme", newTheme);
+			
 		} else if (theme === "dark") {
-			setTheme("light");
+			newTheme="light";
+			setTheme(newTheme);
+			localStorage.setItem("theme", newTheme);
 		}
+		
 	};
 
-    var share={theme,changeTheme};
+	
+	function getTheme(){
+		if (localStorage.getItem("theme")) {
+		  var temp=localStorage.getItem("theme");
+		  setTheme(temp);
+		}
+	
+	   }
+
+    var share={theme,setTheme,changeTheme,getTheme};
 
     return(
         <ThemeContext.Provider value={share}>

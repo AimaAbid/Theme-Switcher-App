@@ -5,7 +5,7 @@ import { useContext } from "react";
 import ThemeContext from "../context/theme-context";
 
 export default function Header() {
-	const { theme, changeTheme } = useContext(ThemeContext);
+	const { theme, changeTheme,setTheme } = useContext(ThemeContext);
 	return (
 		<header className={styles[`header-${theme}`]}>
 			<Link

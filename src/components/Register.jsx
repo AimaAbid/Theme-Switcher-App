@@ -1,10 +1,15 @@
 import React from "react";
 import style from "./Register.module.css";
-import { useContext } from 'react';
+import { useContext,useEffect } from 'react';
 import ThemeContext from "../context/theme-context"
 
 export default function Register() {
-	var {theme}=useContext(ThemeContext);
+	var {theme,getTheme}=useContext(ThemeContext);
+
+	useEffect(()=>{
+		getTheme();
+	
+	   },[]);
 	return (
 		<section className={style[`background-${theme}`]}>
 			<h1 className={`${style[`text-${theme}`]} ${style.center}`}>Register</h1>

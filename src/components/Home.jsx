@@ -1,11 +1,17 @@
 import React from 'react';
 import styles from "./Home.module.css"
 import  WomenImage from "../assets/sam-mcnamara-p0ZvBVpW3KY-unsplash.jpg";
-import { useContext } from 'react';
+import { useContext,useEffect } from 'react';
 import ThemeContext from "../context/theme-context"
 
 export default function Home() {
-  const { theme}=useContext(ThemeContext);
+  const { theme,getTheme}=useContext(ThemeContext);
+
+   useEffect(()=>{
+    getTheme();
+
+   },[]);
+
   return (
     <section className={styles[`viewport-${theme}`]}>
       <section className={styles.container} >
